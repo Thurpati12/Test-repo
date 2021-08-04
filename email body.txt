@@ -1,0 +1,26 @@
+XCM Bangalore DEV and QA environments are approved for build.
+
+We are going to do a like for like migration – no transformation
+
+XCM DEVQA MQ spreadsheet has their current inventory
+
+Azure subscriptions are: TAA-NA-XCM-NP-Z-DevTest and TAA-NA-XCM-NP-Z-QA
+
+VNETS are already created. Please request contributor access to both subscriptions ASAP
+
+Inventory of the Azure VMs to build is in the second spreadsheet – it’s a one for one match with their current inventory
+
+I’ve also attach the first draft of the LLD that Sidhant started a while back
+
+@Dixit, Sidhant  You are in charge of the DEV environment.
+
+@Thurpati, Sai You are in charge of the QA environment
+
+Axcess read-only DCs will be build in the Core subnet – this is true for both subscriptions
+
+All VMs will be build using GBS Service
+A script will need to be created to have those join the Axcess domain, install rapid7 and add any additional manage disk(s) needed.
+
+@Saxena, Manoj Please setup a meeting with the engineers ASAP to bring them up-to-speed on the architecture
+
+Please start working on the LLDs ASAP – I would like to have it finalize by end of the week. I expect 2 LLDs – one for DEV and one for QA
